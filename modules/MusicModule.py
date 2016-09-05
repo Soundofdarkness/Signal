@@ -3,7 +3,7 @@ import discord
 
 
 if not discord.opus.is_loaded():
-    discord.opus.load_opus('/usr/lib/x86_64-linux-gnu/libopus.so')
+    discord.opus.load_opus('opus.dll')
 
 
 class MusicModule:
