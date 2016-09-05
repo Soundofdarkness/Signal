@@ -1,0 +1,533 @@
+Using selector: EpollSelector
+on_command_error has successfully been registered as an event
+on_ready has successfully been registered as an event
+on_resumed has successfully been registered as an event
+on_message has successfully been registered as an event
+logging in using static token
+GET https://discordapp.com/api/v6/users/@me with None has returned 200
+GET https://discordapp.com/api/v6/users/@me has received {'verified': True, 'mfa_enabled': False, 'email': None, 'discriminator': '2914', 'username': 'EleriaDev', 'id': '209771984698081280', 'bot': True, 'avatar': '53c0698ebafe759d3d2c97e7d4e50ae8'}
+GET https://discordapp.com/api/v6/gateway with None has returned 200
+GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
+Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":10,"d":{"heartbeat_interval":41250,"_trace":["discord-gateway-prd-1-5"]}}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 10, 's': None, 't': None, 'd': {'_trace': ['discord-gateway-prd-1-5'], 'heartbeat_interval': 41250}}
+Dispatching event socket_response
+client >> Frame(fin=True, opcode=1, data=b'{"op":2,"d":{"compress":true,"v":3,"large_threshold":250,"token":"MjA5NzcxOTg0Njk4MDgxMjgw.Cq7-FA.cl0SqTNZvp6ad4IfZuP0mzACX4M","properties":{"$referring_domain":"","$referrer":"","$os":"linux","$device":"discord.py","$browser":"discord.py"}}}')
+sent the identify payload to create the websocket
+client << Frame(fin=True, opcode=2, data=b'x\x9c\xc5WM\x8f\xdb8\x0c\xfd+\x0b\x9d3\x80$R\x12\x99[\x81\xf6\xd8KoEQ\x04\x8a-O\r8N`{\xa6(\x06\xf3\xdf\xf7\xd9\xc9\x14\x83\xce\xcebO+ \t\x1c\x8b\x12\xdf#)~<\x99\xc5\xec\xcd\x97O\x1f>~5;3\x9b\xbd\xdb\x99\xf3\xc5\xec\xed\xce\xb4f\xffd\x1e\xcd>\xee\xcc\xc3\\\xa6\xed_\x99\xfa\xae/XY\xa6\x87r}?\xe6S\xc1\x11\x9f\x06\xac\xe5\x8f\xe5\x11\xc7\x9c\xba|(c>\x0e\xabd\x97\x87\x19\xa2=\x1e\x8d\xb7\x9a\x92S\xe1\xa8b\xc5y\xb1\x90.\xa7\xdc\x0ff?>\x0c\x03\x94\xf6s3\xf5\xa7~\xcc\xcbyZw\xa8c\xc8\x1c\xcf\xcb\x8b\xce\xfc\x98\x97\xbc.\x05j,\xce)\xc7\xdc\x95\x14\xb4\xa5\xd67\x9aJj\xb9\x04\x9b\x8b\x98g\x10*\xf3\xdc\x9f\xc7\xc3\xa6\x9d85\xe9\xa8\xd4\xb9\xb6\x94\xc21\xe6\x0e{\xbb\xaeI\r\x0b\x05\x85\x9e\xa9\x0cy\xc1\x86\xf9G\x7f\x811\xbe}\xdf\x99\xcb\xd4Cc94?\xf28\x96a}\xfbd\x96_\x97\xb2\xd9j*M\x7f\xe9\xcb\xb8\\\xdf\xbf1\x88\xf9\xcd\xdc\xb3w\xce\x89\x8f\x9a\x84mL\xe6-\xd9\x90T\xcck\x86\xc0\x97b\xca\x8d\x84\xa32\xb7\x92\xa2\xcf\x8d\xeb8w\x8d\x94V\xcd3\xf0\ry^\x0e\'\xf0\xcc\xf7\xe5\xca\xd3;\xcbN\x88\x83U\xf2\xc4Q\xc4\xbc\xb6?Q\x14\x16\x9f|\x10Y\x8d\xf4\x9f\xd8|\xf8\xebs\x1e_\x8e\x89\xca\xc1[g\x13\xb1\'\x17\x82\xff\x07.\xc0\x1a^s\xe9\xb0CKk\xdb\x1c$\x04\x89\x92\xb8\xe9`\x0bgU<\xb5\xcd\xfb\\\\\x82\x16v\x11_\xb26\xfc\xe6r[!\x12\x02\x19\xe6\xd7\\\xe8\x0f.8\xfb\xfcs,\xd3\xe1\xfd0\xbc\x12\xbdF\xe1\x1b\x1c\xd7\xd7/z\x93h\x0c\xac\x04<\x12xC\xd4\x9c\xc7\xab\xd4\xff\x8a\x01\x86\xd4\x08\xfa\x96ja\xd0\xe0\x139+kH\xd5\xc3@\xc1\x938K\x96\xeb`P\x06\n\x04<\xa2\xc1\xdb:v\x10\xdcg\x87[\xe0\x1dI\xf4\xb1\x1e\x06\x8aP\x0fg\x88V\xc2\xc0!\xe2FX]]a+bP\x8f\x0b\x1ac\xaas7\x91\x7f\xd5\x12>A\xb7\xdcX\r\x03#C\xc2\x1f\x1a]\x1d\x0c\xb2:"\xa2\xe6\x12RE\xa5xX1\xa4\x80\x8e\x03%\xd7\xa5J\x18\x98\xe0\x0fV4\x05\xb8\x1f\xf50l;I\xac\xab\x14\x93\xa8\x98\xcc\x9a\xacE\xdbQ\xa9^l\x18"\x0b\x1a!\xc7\xbeN\xff \xca\xd1\xa1\x85\xa0d]\xb5x\x00\x06\xf4.\x01\xbeH.V\xaa\x17\xca\xaa\x9e41\xc1!\x95\xf2\xc3\x8a\x81\xbc"$\xe1\x8b*\xf5"$\xe4\xa8\x18\xd0G\xa7\x84>\xaaJL^1\xa0d\xa0l\x04W\xe7n\xc2\x13\xde\xab\xba\xb8&\t\xfcT\xc4\xa0\xb0H@\xf1\xfc\xa3\x97\xdbF\xd22\x97\xb1)7\xcd\xf7\x0f\xfd\xd0\xde&\xb6\x11\x03W?\xac\xa3\xf7\xcb\xbc|C\x84~\x087\r\x13\x13{\x0e)\xdamXz_\x1c\xec\x91\x1d1\xdc1;M\xde\xfd\xbb8\x08\x93x\xc6(f\x13c0\xa4m\x9a;,Sn \xf9m\x1b\x0e\xcfS{w\x8fA\xfag\xfeuw\xc1\xb3\xbb\x0b\xb7\xb1q]\xb9\r\xea\xf3m\x89\xcd\xf7\xe7\xe7\xbf\x01\x93\xf5\xed4')
+client << Frame(fin=True, opcode=2, data=b'x\x9c\xadX\xdbn\xdbF\x10\xfd\x15c_+\x1b{\xbf\xf0\xa9I\x13\x18\x05R\xa0h\x94\xa7\xc2\x10\x96\xe4\xae\xc4\x98"\x05\x92\xb2k\x18\xfe\xf7\xceR7R"e)\x89a\xc3\x12)\xee\x9c3{\xe6\xcc\xac^Q\x83"t\xff\xed\xcf/\x9ff\x7f\xfc\xf3\xf9\xc3\xf43\x9a\xa0\x1aEt\x82\xca\x15\x8a\xf0\x04\xa5(zEOe\x96\xb8Y\xdd\xd8\xc6\xc1\xcd\x7f_\xd1\xbav\xd5,\x83{\x88b\xca)!DSi\x94\xe6X\xaa\xb0\xc2z\xb5\xaa\\\r\x9f\xf56\xaf\x1d\\\x807YYl\x1e\x89}l0\x15<\xe5\xc6z\xe5\x12ah\xec\x0c\xe7\xca\x19obc\xc3\x02.\xf7\xb3\xe5\xbaq\x9d\x15\xe0J\xea\xac\xdf_\xe9\xdd\xee\xddI\x16\xb6(\\\xbe\x03\xc8\xb9\xd1\xcap\r 5\x13T\xa0\xb7I\x8f\x01\xa1\x94J\x89\x05!X\n\x05\xc8\xdee\xc0c\xaf\xa8 \xa96\x82po\x95\x8dq\xaa\x8c\xc42\xf6"\xa6N\xfcb\x06\x00\x90\x11\xc0E8S\xd8H\xa3O\x18\x08j\xa4\xa0\x0c\x13\x8a\t\xc7\x1a\xbf\xcb@\xa4\x96x\xe7$\x8d\x95\xe7\xc2$\xd2\xa9\xc41\r\xaf\x12\x9a\xc2:}\x06M\xb5\xfe\xe9-`\x983"8\'FQ\x86\xde\x1e&\xe8\xc9U\x99\xcf\x12\xdb\x04T\xb9{ry\xab\xb8ua\x9fl\x96\xdb8\xef\xe4n\x95\xdbz\x81\xa2b\x9d\xe7\x13T\x95\xf9V\x87\xab\xb2\xce\xc2\xe3\xed\x83+W-\xb3\x96#\xdc$\x10\x8erl\xd4\x04\x15v\t+\xa1\xdf!B\xf5R\x16\x0e\xb8-]\x11\x1e\xeb\xc5X\xda\xc2\xce]\xba\x7f?\x0c=dfQfus\xa0Z\xe6e\x05\x00\xc2\x9e\x1c\xf0\x90#<\x82I\xc6\x85\x14b\x8f\xe7s\x0e\xfc\xed\xc7\xb2\xb9\x1a\x8f2BSN\x88b\x02\xf3\x03\x9e\xcd.m\xe1\x10\xa9\x081T\\\x84J\xb2#TWC\x82\xf2g\x06~\r\xc5r\x14\x92 B3F\xcfC\xa2R\x19\x82\x899@\xfa\x90\xbb\xff\xae\x07\xc4\xa16%dIAq\x8c\x00b\xe09\x18\xb3\xf3x\xa4\xe4\\sf\x8e2\xf4\xc9=]\x87\xc9(\xc5\x14\xc1\n<\xc8\x08L\xc8X\x920\xd1\xa0]y\xad\x9a\xbe6e\xf2\x98\x15\xf3\xab@\r9\xdf\xa0\xb8AM\x1c\xb2)B\xd9Vn\xdebB\xbe\xb2\xc5\xa3_WA\xc0\xc1j\\\x91t\xdaC\xe8\x1bm\x14P!\xe4\x10k"`;$80T?T44\x935|\x1a\x95E\x9e\xb559o\x89\xbc\xa2\xe6e\xe5\xdaz\xde2\xfb\xe2\xec|\xednJ\x7f\xf3\xc5\xcd]\x91\xd6\xe8mg\x7f\xfb\x18\x03]\xe8\xaa\x18\x1fm\xd6D7\xd3\x85\xbb\xb9\x0f\x17\x86\x02\xc0\xfe\x11P\x15\xb8/P\xa1`\xb1g\x02\x04\x9b:]\xe24\xdbg1\xae\xab|gx\xc7p\x9f\xb3fq\xf3\xb7-\x9a\x97!\xa8\xa7\xdd\xe0\xa7\xf3\r\xdb^>\x17g{~\xaf:\xa6\xaen\xbe\xba\n\x0c7\xe8\xd1\xdb\x8e\xbd/\xdd2vU_\'\xe1\xff\xf6\xf9\x85].\xe1\xc1\xb2(\xca&Y\xa0\xc9\xa8\x86\xa0\xe1duRe\xcb\xac\xb0M\xd0(\x12\x9c\x84\xcb\xd0=\x1a[\xed6a\xdf,\x1ev\xedjSn\xdfK\xc8B:\xb3M\xcb\x87\xc8[ln1\x99\x12\x1dq\x1e\x11r\xa7\x14\xec\x10\xfb\r\xe3\x08\x87n\xdain\xdd\x84w\x80\xef\x8ds<E\'\x80\x15\xb4\xf2\x03`$|l\x95T6\xd1"\x86y(\xd5JR\x9b\x10\xcf\xadO\xb4K\r\xea\xd0\x19\xb2\xdd\x87\xa3\x8e|\xcaQ\xdd\x12=\xc5*\xc24\xa2\xf8N\x83\x1a1\xbe\x9a\xe3\xa6emi2\x02\xee\x08\xcb\x08\x02\x7f\x9c\x0f\xed\x8b\xe2\xc6\xc0\xe5\xb8\xdc{\xdd\x9e1wNk\xccc\x03\xc4=\xfc\xa4\x9a\ni],\x8dO-k\x07\x9d#\xc6\xfd\xdew9cJ"A\xef$%?\xc2xc\xf6cFp\xca\x98\x1a\xc2G\x18\x0b\x96`x\xd4\xc5\xd6;%L\xcaR\x9a\x18\xe5T\xca\x9d\xc0\xd6\x1d3>\xe9\x1a\xef3\xd6A\xc7\x14G\\D\x02\xdf\x11v\xe5\x1ew\x1a\xc9x\x938&\xac\xa5\xd6#\x84\xe3\x18s\x8d\xadu4M\x99\x8am\xaa9\xd0\x02\x8f\nCt\x1a\xfb>\xe1\xd3`@\xb8\xc8\x92\xc7\x9d\x15\xbeO^O\x89\x88\x88\x89\x98\xba\xe3\x8a_G~\n\xbc\x16\xf7\x95\x05)\x1e\xf8\x0f\x0c\xd7\xa7\x95,i\xb7\x92\r\x8b\xa9eR\xa4Z\xd8Da\xc6lJI\x82\t\xb3\xd8+\xaf%\x1a2\xa63\xa4\xa8\x9c\x12\x1aa\r2\xbe\x13J\xc3yf\x90\xd4\xc3\xce^gI\xb9.`\x019A\xb9\xad\xe6?,\x97\xf1\x198K\xda\x19@\x08a\x89Nc\xe0\x8b\x13p\x02l`QK%\xf6.\xa6\x89\rI\xf1\x0e:O\xb5\xa3\xea\x96\xe5\xf7l\xfb:u\xde\xae\xf3f\xb6\x84\x93\tL\'3\xb0\xfc\xfd\x81\xa0n\x87\x9e\xed1b\xd3-\xf6\x8d\xaa)WY\x02\xc1\xc3\xdc1|\x00\x98\x95\xd0z\x9e\xab\xac\xd9\x85\xdd\xee/\xf43W\xd9\x1c\x85\xb4\xd4\x87\xc0\x1b\x9ap\xcaR\x02\xc6O!a\xfc\xe4\xa0\xda3\t\xd8\x1f\xc0rPA\xb3A\xd5\xc2\xa3Wc\xba\xdfc\x1a;,AaeMe\x83Fd\x10t\x08~\x9c\x8cMu\x8cL\x8cc\xa1\x8b\xda?\x8f\xe4\x82Hb\xb0\x16Br\xe8a\x82\xf6s\xa1\x83!\xc90_\x83\x15\xa3K\xe0\xd0K\xe0\xd4+\xbb\xbc=\x07\x89IP\x16%\x06\\Q1\xd2\x87D`0\xa0\x00\x19\xba.\xbd\x08\x12\xbb\x04Rc\xf3\xc7a8\x98\x0b\x8c\xe1t\x01=\x1e\x07\xdd\xcb#8p\xd8!\x98\xa9pz\xb8P-g\xb6l\xc7\xa65\x8d\xb3u\x99\xba\xe2\xa5\r`\xf3\xbc|\x06\x96\x84\x0bE\xf5!!\xfd%\x06\xcd\xfdh\t8\x8eh0\xb8\xce\x12\x1b\x939?\xeb\x8c\xe08\xa4\xf6\xafu\r\xdb\xd2KZ\xef[\x9aKT\xdf\xb7\x00\xfe#\t<>Lo\x803\xac\xe8\x1e;\xee\xa0^\x06\xd4\xb7A\xa9\xc3\xb2\x80&\xa1\x99\x16\x0c\xea\x03*H\x1e\x99\x88\x86PJ2\x1a\xe4;\xac\xd2>#\xf1\xeb$\x01\xb7tgK)\xff\x19I\x84\xf4t\x92Rog\x86\xbc\x9c\x8fY+\x86\xb4\x08\xa3C\xb2%g\xb4\x1b\x8d\x85\xfa\xc10\xde\xe8\x80\xfe\xc2b9c(\xd7ff\xab\xef\xcev\xff\x82b9M\xcem\xfb-j\x8fx\xffK\xbd\x13\xc1\xc3\x1a\xd6?\xce\x9al\xe9\xcau\x13\xb2\x8e7W\xba\xdf\xae\xb5\xc7\x9c\xb7\xff\x01\xac\x9bp\xc4')
+client << Frame(fin=True, opcode=2, data=b'x\x9c\xbdW\xdbn\xe36\x10\xfd\x95\x80}iQo\xc0\xfbEO\xedv\xd3\xa0\xc0\xa2(\xba\xe9S\xb10(\x91J\xb8\x91EC\xa2\x13\x04A\xfe\xbdC\xf9\x1a\xdbJ\xe2`\xd1\xa7X\xa2\x86<\xe7\xcc\xcc\xe1\xe4\x11%T\xa0\xcb\x7f\xfe\xf8\xfci\xfa\xdb\xdf\x17\xbf^]\xa0\t\xeaQ\xc1&(\xceQ\x81\'\xc8\xa1\xe2\x11\xdd\xc5P\xf9i\x9fl\xf2\xb0\xf8\xef\xd7\t\xba\xf3]\xa8CeS\x88\xed\xb4\xf1w\xbe\x19\xbe^\xb4\xf6\xce\x86\xc6\x96\x8dGEm\x9b\xde\xc3v\xf3\xc6\xf67\xa8h\x17M3A]l\x86=\x1e\xd1<\xf6!\x87\x0f\x81s\xdf\xcdB\xdf\xc3#,\x12\xcc\x19\xe5\xd8\xa8\tj\xed\x0cvB\xbf\xc0\t\xddCl=\xc0\x9b\xf96\x87=;cf[{\xed\xdd\xe69\xc0OD16\x1c3A\x14\xe7\x94\x0b%1D\xdf\xc4\xd0\xa7\xcdwUlb\x07\x00\x9e&\xbbx\xc8\x1e\x1e\xc1$\xe3BJ\xb6\xc1\xf3\xbb\r\xdd\xc3>\x96\xd4-\xc6\xa1PN%UT1e\x886Jn\xa1,\xc3VH\x88T\x84h\xc1N\x05t\xd1@B\xec\xc7\x98N\x13\x88\x11\x81\xb1\x10\x82R\x869\xc6x\x04\x95\xe2\xc4\x08\xf6\x8aJR\x12-\x19\xdeb\xfa\xd3:\x7f\x1bO\x03\xa4$aF\x1bb\xa81X12&\x93 B3F_C\xc4\xb9\xe6\\\xed\xa9\xf4\xc9\xdf\x9d\x04\n\xca\x91h($N\xb8\xc1\x00J\xbe\xb3\x8c\x0e\xe0|I\xb1\xba\r\xed\xf5ih(\xa5RbA\x08\x96Ba*\xc6\xd1@\x9fv\xfez\xc0\x82\xea\xce\xb6\xb7\xf5\xa2\xcb\x052\xef|\xef\xdbj\xd5\x87\x8b\xdew\xb9\xc9\xb7\x85J\xa0\x04\xa94\nHK\x85\x9e\xa0\x85\xa1\xf3\x17\xf05\x8am\x13\x86&\xbc\x1e\x18<\xa2\xf40\xf7C\x03\xaf(}\xb4!\x15gW7\xfe\xec2\xbfx\xca\x8a\xec\x1d`\x94"Fsi4\xd6\x84j\xfc\xd2\x01\xd93\x0e\xb78\x94\xe0E\x8c\x8b\xaeY\xbb\xcf>\xdc\xfb\x90n\xce\xfe\xb2mz\x00\xa8 W\xbco}7\x1dSb\x13\xf6\xc3g\xbb\xe8|\xf39\x0e\xa9\xab\xed\x8e\x03\xce\xfc\xac\xf4\xddse\xf3\xdfuO\xf88\x8fMH\xb6\xfd\xf1K\\\xb4\xee\'\xb4\xca+\x91\x18\x8eSXP\xc9\x14\xa7 \x12\xac\xb8\xd0W]\x98\x85\xd6\xa6\x9cQ$\r\xa7\xf0\x1a<6\xd9\xfc\x8c\x9da\x86Hk\x856\x12ZG\x96%\xa9\xa0\\+\xe6\xb8&Xg]\xd6\x86{\xcc\x83\x80\xf1l\x91\xb6\x15\xf7-\x82rnj\xd3\xc0\x9f\xc8\x0fX}\xc0\xfa\x8a\x90\x82\x8b\x82\xb0s\xa6\xa1\x01\xf0\xcf\x18\x17\x83U8o\xebU\xecn\x92v\xe8~\xec\x02\x90\xbd\xd9\x90\xd4\x9a2\x03\x19\x93\xc4\x80\xc3sr\x8c$\x03\xd7\xde%)M\xe5(+\x1d\xd0\x84X\x8ak\xea\x05W\x94\xb9\xaa\xd2\xa5\xf6f\x97\xe4[\x08\x11zE$8HA\xe8\xb9\xc9\xfew\n\xa1\xa5\x83\xa0\xc9h\xb7\x1c\xf2\x11\xca\xe8]>\xa2.\xad\x92\xcaVZ\x94\x86s\xa7\x95\xa4\xb6"5\xb7u\xa5\xbd3\xdf#i\x99#/\xb0.\x98<\xc7\x9c\xbf\x87\xe3\xd2%\xc7z\xf6\x90&5$\xa7\xad\x8c\x1b\xaf\xde2f\x15\x86P_\xda\xda+a\x1cs\xb42\xca+\xc7\xbd\xc0\xd6\xef\x95\xe9\xa1\xdd\xbe\xceX\x7f\xc0\xec\nRJUf\xac\xb8>\x8d\xf1\x8e\x11\x8f\x9b\xec>a-\xb5\x1e!\\\x96\x18 X\xeb\xa9sL\x95\xd6i\x0e\x1a\x12AyY+W\xd6{\x84\x0f\x0e{\x0baB\xae\xb0,\xb0)\xa88\x17\x8a\x8c\x11\xfe\xba\xb6\xa4i\x05~\x03\x1b\x88\tjlw\xfdn5\xc7G\xabP-o\x1a\xa9T\xcd\xca\xca\x96\xc6K\x07\xa5#De)\x85\xf9\xa2\x14NWY\xca\xda\x83Ww\xeb\x8e\xf5\xb3\xf8-\xac~;_\xdbE\x93\xa63\xdf\xf7p\xf9M\xdb\x986sf?\x18luc\xdb\xd67K\x87\xdd\xf8y\x8a\xf3P\xc1\xe1\xf9v;>WN#\x8c\x90\xf7]\xd8\x8c\xb0\xab\xdc_{\xb0|\xdb\xa0,K\xbf=xI\x93\x12i\x0c\x18\x16\x83qKkC\xf5\x0b\x02\xackk\xda@\x91\xa4%\xaa\x01\x1e}#\xa65\x9d\xa14^T\xda\xf9\xf6a\xd8\xca6M\xbc\x87q\x9d\xc0\n\xd5O[V\x97\x1bV\xcfv\xa1Jkn$3,WnH\x9d\xcdU&\xb3Ad\xf8/\xcbI\xbe\x1ft\x02\xb6\xb6A\xbfs\xf4^\xfc\x91\xa1y\x9fz\xdei\x87w3\\\xcc\xfd\xf1l\x12p\x13\xd0@\x10\xc3\xb51\x90\xd1g\'i"T\xf6b\x80\xac9z]\x0e\xfa\x7f\xcbql\x0e=\xa8\x04\xac\xe8\xa8\x9cG\xa6\xfd\x93\xd2qd8_\xc6\xe7Sw\xe2\xb7\xe9\x009\xd2H.$\x80 Yl\x10\x821f\x9e\xd3\x14\x04\x1b,e\xbe\xe8\xf1\x1br\xc1\xde\xd2\xe9\xb1\x1a\x81\xc2\x99\x82\x7f&\x94\x11\n\xb2\xa20\xdfB\x81\x15\x0e\xf7;\x14\x87b@\x99\xa2\xcc\xcd\xd6\xb7\xd3\x14f>.R\xa6\x8e\x97oV\xbe4\xec9\x8c\xadO\xff\x01R:~\xe9')
+client << Frame(fin=True, opcode=2, data=b'x\x9c\xb5W\xdbn\xdbF\x10\xfd\x15a_\xab\x18{\xbf\x10}h\xd3\x18n\x81\x04(\x1a\xf7\xa9\x08\x84%\xb9\xb47&\xb9\x02\xb9\xb4a\x18\xfe\xf7\x0e)\x89\xd6\x8dr$\xb4O\x92(\xce\xec\x9933gf_PD\t\xba\xf9\xfb\x8f\xcf\x9f\x16\xbf\xfdu\xfd\xeb\xed5\x9a\xa3\x16%|\x8e\xc2\x12%x\x8er\x94\xbc\xa0\xc7\xe03\xb7h\xa3\x8d\x0e\xfe\xfc\xe7\xdb\x1c=\xba\xc6\x17>\xb3\xd1\x87zQ\xbaGW\x0eow\xb5}\xb4\xbe\xb4i\xe9PR\xd8\xb2u\xe0nY\xda\xf6\x1e%uW\x96s\xd4\x84r\xf0\xf1\x82\x96\xa1\xf5\xbd\xf9`\xb8tM\xe5\xdb\x16~\xc2\x9f\x04sF96j\x8ej[\x81\'\xf4\x0b\x9c\xd0<\x87\xda\x01\xbc\xca\xd5\xbd\xd9\xce\x19\x95\xad\xed\x9d\xcb\xc7\xdf\x1e\xbe"J\xb1a\x9ar\xc64V\x1c\x13\xcc\xc0\xfa>\xf86\x8e\xefe\xa1\x0c\r\x00x\x9do\xe3!{x\x04\x93\x8c\x0b)\xd9\x88\xe7\x8b\xb3\xf5\xecK\xc8\xdb}<\xb1\xe9N\xc3\x91R`\xf0\xa6\t\xe3\xfc\r\xce\xcal\x8d\x86`\xa2\x81\x02y\x1a\x94\x94DK\x86\xdf0]\x97\x90\x13\xfb\xc9=\xbe\xc7\xd1\xea\xb0\x11\x13\xc7\x98\n\xa0\xc7\x004s)E\x07h\xbe\xc6\x90=\xf8\xfa\xee\\0\x84+\xc8=%\x82\x1aI.\x04sX?\x1fC<H\xd5{\xa5\xc3\x89T\x94`*\xa9\xa0\x1aO\xe5J\x10\xa1\x19\xa3g\xb2\xf3\xd9v\r\xb4\xcc\x99\xdc0\xa2\x0c\xe5\xc2p\x0eG\xfeW\x89\xfa\xecB\xfd~_\xed@!\x84\x1b\xc6\x99\x00\x18\xd8\x08\xcc\xa7\xa1\x80R4\xeen\x00\x82\x8a\xc6\xd6\x0fE\xd7Dx}\xd9\xb8\xd6\xd5\xd9Z\t\xba\xd65\xbd\xcc\x0c\xee\t\xb4+\xc3J\x08b(\xe1L+\x8a^AD@{:x\x1b\x85\xba\xf4\x03\xdc\xbb\x01\xfe\x0b\x8a\xcfK7H\xc8\xa65\xbb2\xfah\xdb\xbe\xf8f6\xce|lg\xa9k\xe3\xecg\x86^{nvO3J\x12\xa5\x0cPK\xb0\xa4J\xf3S\xa7\xf5\x12v\xe0\x82\xe2\xbe^\t\xd1T\x1a\xb0\xc7R\x9d\x07\xf8\xa3\xf51\x99\xdd\xde\xbb\xd9M\xff\xe0\x10#\xa4^)b4\x97FcM\xfab<\x1b#\xa1\x94J\x89\x05\x81(\x85\x82\x86?\x8d\xb1k\xca\x8d`\xef\xc3}\xf2\xf1~\xf6\xa7\xad\xe33@\x85\xfc\x86\xa7\xda5\x8b)&F\xb3\xdfC\xe5f\xa1\x98E\x88\xb3\xdaV\xcf\xc2n\xcd\x8f\xcaU\xa9kv\xab\xa2\xff\xdcH\\\xe3|\x8d\xe6\x93\x85\x02\xe3\xca\xb7Y\xe3+_\xdb\xd8W "\xda\x08x\x0cS)\xda\xfe\xb75\x19\'\xc2rL\xc1\x9c\xa7\xac`\x96\x99\x8c:\x8by\x9e\x93T\xf7\xb4lF\xd41\xc5\x86\x80k\x9f=l\xc8\xa9\xba\xf8\xd6,\xdf\x03\x90\x98/l\x1c\xa8 \xf2\x036\x1f0\xb9%\x12\x04)\xa1\xe2\x8aa"\x84\xf9\t\xe3\x04\xf7r\x92;[\xacm\xb7\xf3\xb5\x15\xee\xd8\x9a\xabx5\xd8K\x062 4g\xc60y$\xde>\xc5\xf08\r\xa3P\x8d\xa1\x13\xa2\\fRC\xa0\x86\x1c\xa1.u\xc6\xe4\x0c\x0b\xae\xa8\x10\xa0q{\xa1\x1fi\xf2#\xaax6\x1f\xf4\x16\xcb\x04\xeb\x84\xd1+\xca\r\xe1\xe4\x1c>6\xaa9\xd5\xba\xc7\xf2\xcf\xf8\x04\x1f"%\x8a2\xa9RnR!\x0bcD\xe1\x8c\x13\nfG\x91\xa6\x99=(\x85\x83\x81pD\x94/\xab\x0fj\x12\xa2\xaf\xb4\xe6Z\xab3\xf8XM\xfc\r\x1fG\xbbo\x9f\x0f\xa1\x8c\xde\xee\x07Q\xa4VIe3-R\x08!\xd7JR\x9b\x91\x82\xdb"\xd3.7\xffO?`\x93pz\x85\x15\xc3\x18\x9f\x1d\xefj\xc3\x99R\xc6\xc3\x90)T\xd9T\t\xb0\x0c\x83\xa9Km\xe1\x94\x80n\xc8if\x94S9w\x02[w\xa8\x06\xc7K`w\x81\xbaP"d\xc2\xe5\x15$\x0e\xca\xfa\x0cJ\xb6\xd6\xac)\xa1?dDK\xad\'\x18IS\xcc5\xb6\xd6\xd1<g*\xb5\xb9\xe6\x10!lc<-T\x9e\x16?\xc8\xc8\xee\x16waS\xd0^$\x08#\xe0\xfe(#\xdf6\xf3b\x91\x85\xae\x06\x07r\x8eJ\xdb\xdc]L\xf7\xf4\xad\xc1g\xfd\n\xb3\x82_8\x98\x9a\xcd\xe6"\xe4\xaa\xf0\xdd\xaf\xbf\xe7\xae\xb0\xb0},*\xd7\xb6\xb06-\xea\x10\xc7KR;\xacb\xd9\xbd\x05E/W\x03n\x9c\xac1,}\xb6q?q-Z\x04\xb8\x01=5~\xbc\x81\xad\x0b\xe0\xce\xc1\xf8\xb5\xbd(\xc2-\xeb\xed\xe8u(\x94\x81\x88\x83\xbe\x13.0\x96\xd8\x9c\x08rS`\x8b\x12*%\xaep\r\x00\xe9\xd9\x98nFL\xc7\x0f\x1b\xda\xd1\xc7\xc6\xf6u \xa1}\x86\x9d\xf5=:\xc8\x8f\x1c\r5\x9d\xf7\xdbDX\xf6\xeb\xec\x04+P\xa0\\)\n#\x14\xb6wAwR\xcf\tt3\x83\x91g\xa4b\n\x1d\x03\x86\xd06,:\rkc:t\xcc\xc9\xfa\xca]\xfd\xdc\xdf[(\\\xbcmY\x86\xa7\xf5\x1e?a\x7fpKZ\xd9\xe3\xd1\xb8\xf7t\xca~\xff\xcaw\xa6\xfd\xc15\xf6\xa8\xfd[V\xaa\xae\x05\xe2&J\x94j\xe8B\xac\xa4\x16L@6vpr\x903\xd3\xffcH\x9f\x0c\xf0h\x8b\x87E\xf4\x95\x0b\x1d\xd4(\xcc\x8f\xd5\x93u_\r>\x87\x05\xf8\xf5_D\xc1\xf1\x18')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 1, 't': 'READY', 'd': {'_trace': ['discord-gateway-prd-1-5', 'discord-sessions-prd-1-4'], 'v': 6, 'session_id': '347c7b93f1deee466afbafffc7c48359', 'relationships': [], 'presences': [], 'private_channels': [{'recipients': [{'username': 'Eleria', 'id': '202421118269784067', 'avatar': '5fba767ac85b944d8762ac1f4afc8ed9', 'discriminator': '5798'}], 'type': 1, 'last_message_id': '210418345093234688', 'id': '209773368482725888'}, {'recipients': [{'username': 'A Man', 'id': '69452010734231552', 'avatar': 'f5209ed0da585586874cf697109823dc', 'discriminator': '8765'}], 'type': 1, 'last_message_id': '210174234163413005', 'id': '210174233383272448'}, {'recipients': [], 'name': None, 'id': '210789654931308545', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210789655589683203', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210789952731086848', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210789953523810304', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210794899765854208', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210872512442138626', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210872513662681089', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210874563200942080', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210874563926556673', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210876903903592448', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210876904545320961', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210883926678437890', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210883927546658817', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210884387649093632', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210884388081238018', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210889644970082304', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210889646488551425', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210894619653701632', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210894620350087169', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210894992397434880', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '210894993290821633', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '215783965724770305', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '215783966907695104', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '219492299166449664', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}, {'recipients': [], 'name': None, 'id': '219492299921555456', 'type': 3, 'owner_id': '209771984698081280', 'last_message_id': None, 'icon': None}], 'user': {'verified': True, 'mfa_enabled': False, 'email': None, 'discriminator': '2914', 'username': 'EleriaDev', 'id': '209771984698081280', 'bot': True, 'avatar': '53c0698ebafe759d3d2c97e7d4e50ae8'}, 'guilds': [{'unavailable': True, 'id': '200940351744245760'}, {'unavailable': True, 'id': '204493043154419721'}, {'unavailable': True, 'id': '220938243380740103'}]}}
+Dispatching event socket_response
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 2, 't': 'GUILD_CREATE', 'd': {'verification_level': 0, 'afk_channel_id': None, 'owner_id': '202421118269784067', 'channels': [{'permission_overwrites': [], 'topic': '', 'name': 'general', 'position': 0, 'id': '204493043154419721', 'type': 0, 'last_message_id': '222375267560194048'}, {'permission_overwrites': [], 'user_limit': 0, 'name': 'General', 'position': 0, 'id': '204493043154419723', 'type': 2, 'bitrate': 64000}, {'permission_overwrites': [], 'topic': None, 'name': 'nsfw', 'position': 1, 'id': '204498078865162241', 'type': 0, 'last_message_id': '221619085564182528'}, {'permission_overwrites': [], 'topic': None, 'name': 'spam-sfw', 'position': 2, 'id': '204498124629082112', 'type': 0, 'last_message_id': '221636260219977731'}, {'permission_overwrites': [], 'topic': None, 'name': 'talk', 'position': 3, 'id': '204498151510376448', 'type': 0, 'last_message_id': '204500171118084096'}, {'permission_overwrites': [{'id': '204493043154419721', 'type': 'role', 'deny': 0, 'allow': 3145728}, {'id': '212226605110657025', 'type': 'role', 'deny': 0, 'allow': 1048576}, {'id': '202421118269784067', 'type': 'member', 'deny': 0, 'allow': 3145728}], 'user_limit': 0, 'name': 'Music', 'position': 1, 'id': '204498794811883525', 'type': 2, 'bitrate': 64000}, {'permission_overwrites': [{'id': '204497958241173504', 'type': 'role', 'deny': 3072, 'allow': 0}], 'topic': '', 'name': 'music-spam', 'position': 4, 'id': '204498824763277312', 'type': 0, 'last_message_id': '212083853886619648'}, {'permission_overwrites': [{'id': '204493043154419721', 'type': 'role', 'deny': 2048, 'allow': 1024}, {'id': '212226605110657025', 'type': 'role', 'deny': 0, 'allow': 3072}], 'topic': '', 'name': 'stockinglog', 'position': 5, 'id': '212230840095080449', 'type': 0, 'last_message_id': '222008359895826432'}, {'permission_overwrites': [{'id': '204493043154419721', 'type': 'role', 'deny': 1048576, 'allow': 0}, {'id': '212226605110657025', 'type': 'role', 'deny': 0, 'allow': 1048576}], 'user_limit': 0, 'name': 'stocking-voice', 'position': 2, 'id': '212231025143709698', 'type': 2, 'bitrate': 64000}], 'voice_states': [{'self_deaf': False, 'suppress': False, 'session_id': 'bfb90254d49af7ec592be9447e9f9b9a', 'user_id': '202421118269784067', 'deaf': False, 'self_mute': False, 'mute': False, 'channel_id': '204498794811883525'}, {'self_deaf': False, 'suppress': False, 'session_id': '4bf7251d89514fa7ab0d79606bf5b2e5', 'user_id': '212226605110657025', 'deaf': False, 'self_mute': False, 'mute': False, 'channel_id': '212231025143709698'}, {'self_deaf': False, 'suppress': False, 'session_id': '5da1fee62b7f459c6e7ce3859cc2d301', 'user_id': '215296523012014080', 'deaf': False, 'self_mute': True, 'mute': False, 'channel_id': '204493043154419723'}], 'icon': '555a18db3b20c48409016a260feb2ca2', 'roles': [{'id': '204493043154419721', 'color': 0, 'name': '@everyone', 'position': 0, 'permissions': 104324097, 'mentionable': False, 'managed': False, 'hoist': False}, {'id': '204497958241173504', 'color': 16711925, 'name': 'EleriaBot', 'position': 1, 'permissions': 536345655, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '204498263963992064', 'color': 15158332, 'name': 'Eleria', 'position': 1, 'permissions': 536345663, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '204498495162417152', 'color': 3447003, 'name': 'Alex', 'position': 1, 'permissions': 267910193, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '209773710788395011', 'color': 10181046, 'name': 'EleriaDev', 'position': 1, 'permissions': 66448439, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '212226605110657025', 'color': 16741625, 'name': 'Stocking', 'position': 1, 'permissions': 536345655, 'mentionable': False, 'managed': False, 'hoist': False}], 'name': 'EleriaTestServer', 'id': '204493043154419721', 'joined_at': '2016-08-01T20:45:50.136000+00:00', 'default_message_notifications': 1, 'features': [], 'mfa_level': 0, 'afk_timeout': 300, 'region': 'frankfurt', 'emojis': [], 'splash': None, 'members': [{'joined_at': '2016-09-01T18:44:11.777023+00:00', 'deaf': False, 'mute': True, 'user': {'username': 'hammervonnotch', 'id': '192664081562468353', 'avatar': None, 'discriminator': '5413'}, 'roles': []}, {'joined_at': '2016-07-18T07:02:20.866000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'Eleria', 'id': '202421118269784067', 'avatar': '5fba767ac85b944d8762ac1f4afc8ed9', 'discriminator': '5798'}, 'roles': ['204498263963992064']}, {'joined_at': '2016-07-18T07:21:52.621000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'EleriaBot', 'id': '203148460051005443', 'bot': True, 'avatar': '4ee8804b9ba7ffffd8256aeb69fda398', 'discriminator': '7499'}, 'roles': ['204497958241173504']}, {'joined_at': '2016-08-01T20:45:50.136000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'EleriaDev', 'id': '209771984698081280', 'bot': True, 'avatar': '53c0698ebafe759d3d2c97e7d4e50ae8', 'discriminator': '2914'}, 'roles': ['209773710788395011']}, {'nick': None, 'roles': ['212226605110657025'], 'mute': False, 'deaf': False, 'user': {'username': 'Stocking', 'id': '212226605110657025', 'bot': True, 'avatar': 'bb0480aae2dd37bad842091524bf7dbf', 'discriminator': '8688'}, 'joined_at': '2016-08-08T15:19:37.474000+00:00'}, {'joined_at': '2016-08-26T12:08:21.578987+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'TischGrafff', 'id': '215296523012014080', 'avatar': '93b2a365d85ac7033ad21c013a0f7f86', 'discriminator': '5762'}, 'roles': []}], 'unavailable': False, 'member_count': 6, 'large': False, 'presences': [{'status': 'online', 'user': {'id': '192664081562468353'}, 'game': {'type': 0, 'name': 'League of Legends'}}, {'status': 'online', 'user': {'id': '202421118269784067'}, 'game': {'type': 0, 'name': 'Bait: The Game'}}, {'status': 'online', 'user': {'id': '209771984698081280'}, 'game': None}, {'status': 'online', 'user': {'id': '212226605110657025'}, 'game': {'type': 0, 'name': 'with Panty', 'url': None}}, {'status': 'online', 'user': {'id': '215296523012014080'}, 'game': {'type': 0, 'name': 'League of Legends'}}]}}
+Dispatching event socket_response
+Dispatching event server_available
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 3, 't': 'GUILD_CREATE', 'd': {'verification_level': 0, 'afk_channel_id': None, 'owner_id': '202421118269784067', 'channels': [{'permission_overwrites': [], 'topic': '', 'name': 'general', 'position': 0, 'id': '200940351744245760', 'type': 0, 'last_message_id': '221699970334588928'}, {'permission_overwrites': [{'id': '200940351744245760', 'type': 'role', 'deny': 0, 'allow': 3145728}], 'user_limit': 0, 'name': 'General', 'position': 0, 'id': '200940352788496393', 'type': 2, 'bitrate': 64000}, {'permission_overwrites': [{'id': '200940351744245760', 'type': 'role', 'deny': 1024, 'allow': 0}, {'id': '202426272737918976', 'type': 'role', 'deny': 0, 'allow': 1024}], 'topic': '', 'name': 'laurels', 'position': 1, 'id': '202428157876240384', 'type': 0, 'last_message_id': '210733525194899458'}, {'permission_overwrites': [{'id': '200940351744245760', 'type': 'role', 'deny': 1024, 'allow': 0}, {'id': '210418403414900736', 'type': 'role', 'deny': 0, 'allow': 3072}, {'id': '203150055522304000', 'type': 'role', 'deny': 1024, 'allow': 0}, {'id': '207613989192990731', 'type': 'role', 'deny': 3072, 'allow': 0}], 'topic': '', 'name': 'test', 'position': 2, 'id': '210418510906654720', 'type': 0, 'last_message_id': '216230124037603339'}, {'permission_overwrites': [], 'topic': '', 'name': 'oc', 'position': 3, 'id': '214374111428739072', 'type': 0, 'last_message_id': '214378337957576704'}], 'voice_states': [], 'icon': 'f677f3bcab9e6d09755ca22040b5d8c5', 'roles': [{'id': '200940351744245760', 'color': 0, 'name': '@everyone', 'position': 0, 'permissions': 104324097, 'mentionable': False, 'managed': False, 'hoist': False}, {'id': '202426272737918976', 'color': 16711853, 'name': 'Fairy', 'position': 1, 'permissions': 536345663, 'mentionable': True, 'managed': False, 'hoist': True}, {'id': '203150055522304000', 'color': 7419530, 'name': 'EleriaBot', 'position': 1, 'permissions': 536345663, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '207613989192990731', 'color': 15158332, 'name': 'Nadeko', 'position': 1, 'permissions': 66186303, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '210418403414900736', 'color': 0, 'name': 'EleriaDev', 'position': 1, 'permissions': 66448447, 'mentionable': False, 'managed': False, 'hoist': False}, {'id': '212226605110657025', 'color': 0, 'name': 'Stocking', 'position': 1, 'permissions': 66448447, 'mentionable': False, 'managed': False, 'hoist': False}], 'name': '#LaurelLog', 'id': '200940351744245760', 'joined_at': '2016-08-03T15:27:36.748000+00:00', 'default_message_notifications': 0, 'features': [], 'mfa_level': 0, 'afk_timeout': 300, 'region': 'frankfurt', 'emojis': [], 'splash': None, 'members': [{'joined_at': '2016-07-08T11:45:13.389000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'Neopolitan(Sound)', 'id': '160421705263742977', 'avatar': '0d93916aa58967616bb1c104c3d48108', 'discriminator': '6942'}, 'roles': ['202426272737918976']}, {'joined_at': '2016-07-12T16:15:12.915000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'Brilith', 'id': '188239702619324417', 'avatar': '69cd23bd6aa39720f2e54723dcc8b8e9', 'discriminator': '3094'}, 'roles': []}, {'joined_at': '2016-07-12T14:08:36.044000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'Eleria', 'id': '202421118269784067', 'avatar': '5fba767ac85b944d8762ac1f4afc8ed9', 'discriminator': '5798'}, 'roles': ['202426272737918976']}, {'joined_at': '2016-08-03T15:27:36.748000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'EleriaDev', 'id': '209771984698081280', 'bot': True, 'avatar': '53c0698ebafe759d3d2c97e7d4e50ae8', 'discriminator': '2914'}, 'roles': ['210418403414900736']}, {'joined_at': '2016-08-11T06:09:25.571000+00:00', 'deaf': False, 'mute': False, 'user': {'username': 'Stocking', 'id': '212226605110657025', 'bot': True, 'avatar': 'bb0480aae2dd37bad842091524bf7dbf', 'discriminator': '8688'}, 'roles': ['212226605110657025']}], 'unavailable': False, 'member_count': 5, 'large': False, 'presences': [{'status': 'online', 'user': {'id': '202421118269784067'}, 'game': {'type': 0, 'name': 'Bait: The Game'}}, {'status': 'online', 'user': {'id': '209771984698081280'}, 'game': None}, {'status': 'online', 'user': {'id': '212226605110657025'}, 'game': {'type': 0, 'name': 'with Panty', 'url': None}}]}}
+Dispatching event socket_response
+Dispatching event server_available
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 4, 't': 'GUILD_CREATE', 'd': {'verification_level': 0, 'afk_channel_id': None, 'owner_id': '202421118269784067', 'channels': [{'permission_overwrites': [], 'topic': None, 'name': 'general', 'position': 0, 'id': '220938243380740103', 'type': 0, 'last_message_id': '222349372514500609'}, {'permission_overwrites': [], 'user_limit': 0, 'name': 'General', 'position': 0, 'id': '220938243380740104', 'type': 2, 'bitrate': 64000}, {'permission_overwrites': [], 'topic': None, 'name': 'botdevelopment', 'position': 1, 'id': '220941002330996737', 'type': 0, 'last_message_id': '220944772993515520'}, {'permission_overwrites': [{'id': '220938243380740103', 'type': 'role', 'deny': 1024, 'allow': 0}, {'id': '220941473242152961', 'type': 'role', 'deny': 0, 'allow': 1024}, {'id': '220940025401966593', 'type': 'role', 'deny': 0, 'allow': 1024}, {'id': '220938665063481344', 'type': 'role', 'deny': 0, 'allow': 1024}], 'topic': '', 'name': 'music', 'position': 2, 'id': '220944122968539137', 'type': 0, 'last_message_id': '222287810768535552'}], 'voice_states': [], 'icon': None, 'roles': [{'id': '220938243380740103', 'color': 0, 'name': '@everyone', 'position': 0, 'permissions': 104324097, 'mentionable': False, 'managed': False, 'hoist': False}, {'id': '220938665063481344', 'color': 10181046, 'name': 'Mean Mods', 'position': 1, 'permissions': 536345663, 'mentionable': True, 'managed': False, 'hoist': True}, {'id': '220940025401966593', 'color': 0, 'name': 'EleriaDev', 'position': 1, 'permissions': 66186303, 'mentionable': False, 'managed': True, 'hoist': False}, {'id': '220941473242152961', 'color': 0, 'name': 'Stocking', 'position': 1, 'permissions': 66186303, 'mentionable': False, 'managed': True, 'hoist': False}, {'id': '220941672102625280', 'color': 15158332, 'name': 'Bots', 'position': 1, 'permissions': 104324097, 'mentionable': False, 'managed': False, 'hoist': True}, {'id': '220943179245944833', 'color': 0, 'name': 'Laurel', 'position': 1, 'permissions': 66186303, 'mentionable': False, 'managed': True, 'hoist': False}, {'id': '221149343548309504', 'color': 0, 'name': 'Leonne', 'position': 1, 'permissions': 66186303, 'mentionable': False, 'managed': True, 'hoist': False}], 'name': 'Home of the mean Mods', 'id': '220938243380740103', 'joined_at': '2016-09-01T16:16:46.978197+00:00', 'default_message_notifications': 1, 'features': [], 'mfa_level': 0, 'afk_timeout': 300, 'region': 'frankfurt', 'emojis': [], 'splash': None, 'members': [{'nick': None, 'roles': ['220938665063481344'], 'mute': False, 'deaf': False, 'user': {'username': 'Erein', 'id': '133830755192143872', 'avatar': 'a9c415a4021334b3f3a39c2ea04dd1b8', 'discriminator': '1895'}, 'joined_at': '2016-09-01T16:10:25.301559+00:00'}, {'nick': None, 'roles': ['221149343548309504', '220941672102625280'], 'mute': False, 'deaf': False, 'user': {'username': 'Leonne', 'id': '180156394358439936', 'bot': True, 'avatar': '117ec9b91081e12ebe99d30547255252', 'discriminator': '6051'}, 'joined_at': '2016-09-02T06:08:32.249141+00:00'}, {'nick': None, 'roles': ['220941672102625280', '220943179245944833'], 'mute': False, 'deaf': False, 'user': {'username': 'Laurel', 'id': '197617793171062784', 'bot': True, 'avatar': '5b172367b49b56f995fe9e57432fbbca', 'discriminator': '1834'}, 'joined_at': '2016-09-01T16:29:18.884887+00:00'}, {'nick': None, 'roles': ['220938665063481344'], 'mute': False, 'deaf': False, 'user': {'username': 'Eleria', 'id': '202421118269784067', 'avatar': '5fba767ac85b944d8762ac1f4afc8ed9', 'discriminator': '5798'}, 'joined_at': '2016-09-01T16:09:42.073000+00:00'}, {'nick': None, 'roles': ['220941672102625280', '220940025401966593'], 'mute': False, 'deaf': False, 'user': {'username': 'EleriaDev', 'id': '209771984698081280', 'bot': True, 'avatar': '53c0698ebafe759d3d2c97e7d4e50ae8', 'discriminator': '2914'}, 'joined_at': '2016-09-01T16:16:46.978197+00:00'}, {'nick': None, 'roles': ['220941672102625280', '220941473242152961'], 'mute': False, 'deaf': False, 'user': {'username': 'Stocking', 'id': '212226605110657025', 'bot': True, 'avatar': 'bb0480aae2dd37bad842091524bf7dbf', 'discriminator': '8688'}, 'joined_at': '2016-09-01T16:22:32.131210+00:00'}], 'unavailable': False, 'member_count': 6, 'large': False, 'presences': [{'status': 'online', 'user': {'id': '133830755192143872'}, 'game': {'type': 0, 'name': 'Multitasking at its best <3'}}, {'status': 'online', 'user': {'id': '197617793171062784'}, 'game': None}, {'status': 'online', 'user': {'id': '202421118269784067'}, 'game': {'type': 0, 'name': 'Bait: The Game'}}, {'status': 'online', 'user': {'id': '209771984698081280'}, 'game': None}, {'status': 'online', 'user': {'id': '212226605110657025'}, 'game': {'type': 0, 'name': 'with Panty', 'url': None}}]}}
+Dispatching event socket_response
+Dispatching event server_available
+Dispatching event ready
+client << Frame(fin=True, opcode=1, data=b'{"t":"TYPING_START","s":5,"op":0,"d":{"user_id":"202421118269784067","timestamp":1473088826,"channel_id":"204493043154419721"}}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 5, 't': 'TYPING_START', 'd': {'channel_id': '204493043154419721', 'timestamp': 1473088826, 'user_id': '202421118269784067'}}
+Dispatching event socket_response
+Dispatching event typing
+client << Frame(fin=True, opcode=1, data=b'{"t":"MESSAGE_CREATE","s":6,"op":0,"d":{"type":0,"tts":false,"timestamp":"2016-09-05T15:20:29.025000+00:00","pinned":false,"nonce":"222375408220241920","mentions":[],"mention_roles":[],"mention_everyone":false,"id":"222375408933273601","embeds":[],"edited_timestamp":null,"content":"?play","channel_id":"204493043154419721","author":{"username":"Eleria","id":"202421118269784067","discriminator":"5798","avatar":"5fba767ac85b944d8762ac1f4afc8ed9"},"attachments":[]}}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 6, 't': 'MESSAGE_CREATE', 'd': {'attachments': [], 'pinned': False, 'mention_everyone': False, 'nonce': '222375408220241920', 'content': '?play', 'embeds': [], 'mentions': [], 'edited_timestamp': None, 'channel_id': '204493043154419721', 'mention_roles': [], 'tts': False, 'author': {'username': 'Eleria', 'id': '202421118269784067', 'avatar': '5fba767ac85b944d8762ac1f4afc8ed9', 'discriminator': '5798'}, 'id': '222375408933273601', 'type': 0, 'timestamp': '2016-09-05T15:20:29.025000+00:00'}}
+Dispatching event socket_response
+Dispatching event message
+Dispatching event command
+attempting to join voice channel Music
+client >> Frame(fin=True, opcode=1, data=b'{"op":4,"d":{"guild_id":"204493043154419721","self_deaf":false,"self_mute":false,"channel_id":"204498794811883525"}}')
+client << Frame(fin=True, opcode=1, data=b'{"t":"VOICE_STATE_UPDATE","s":7,"op":0,"d":{"user_id":"209771984698081280","suppress":false,"session_id":"347c7b93f1deee466afbafffc7c48359","self_mute":false,"self_deaf":false,"mute":false,"guild_id":"204493043154419721","deaf":false,"channel_id":"204498794811883525"}}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 7, 't': 'VOICE_STATE_UPDATE', 'd': {'guild_id': '204493043154419721', 'self_deaf': False, 'suppress': False, 'session_id': '347c7b93f1deee466afbafffc7c48359', 'user_id': '209771984698081280', 'deaf': False, 'self_mute': False, 'mute': False, 'channel_id': '204498794811883525'}}
+Dispatching event socket_response
+Dispatching event voice_state_update
+client << Frame(fin=True, opcode=1, data=b'{"t":"VOICE_SERVER_UPDATE","s":8,"op":0,"d":{"token":"dc85b8de5de31fbf","guild_id":"204493043154419721","endpoint":"frankfurt197.discord.gg:80"}}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 8, 't': 'VOICE_SERVER_UPDATE', 'd': {'guild_id': '204493043154419721', 'endpoint': 'frankfurt197.discord.gg:80', 'token': 'dc85b8de5de31fbf'}}
+Dispatching event socket_response
+Unhandled event VOICE_SERVER_UPDATE
+created opus encoder with {'frame_length': 20, 'sample_size': 4, 'frame_size': 3840, 'application': 2049, 'sampling_rate': 48000, '_state': <discord.opus.LP_EncoderStruct object at 0x7f3ed679b268>, 'channels': 2, 'samples_per_frame': 960}
+voice connection is connecting...
+Voice endpoint found frankfurt197.discord.gg (IP: 151.80.97.183)
+client >> Frame(fin=True, opcode=1, data=b'{"op":0,"d":{"token":"dc85b8de5de31fbf","session_id":"347c7b93f1deee466afbafffc7c48359","server_id":"204493043154419721","user_id":"209771984698081280"}}')
+client << Frame(fin=True, opcode=1, data=b'{"op":2,"d":{"ssrc":14,"port":50409,"modes":["plain","xsalsa20_poly1305"],"heartbeat_interval":5500}}')
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"212226605110657025","ssrc":1,"speaking":true}}')
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 2, 'd': {'ssrc': 14, 'port': 50409, 'modes': ['plain', 'xsalsa20_poly1305'], 'heartbeat_interval': 5500}}
+received packet in initial_connection: b'\x0e\x00\x00\x0079.230.62.117\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00e\x9a'
+detected ip: 79.230.62.117 port: 39525
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":{"protocol":"udp","data":{"port":39525,"address":"79.230.62.117","mode":"xsalsa20_poly1305"}}}')
+Selected protocol as {'op': 1, 'd': {'protocol': 'udp', 'data': {'port': 39525, 'address': '79.230.62.117', 'mode': 'xsalsa20_poly1305'}}}
+selected the voice protocol for use
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 1, 'speaking': True, 'user_id': '212226605110657025'}}
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":4,"d":{"secret_key":[229,190,65,101,196,70,204,240,117,58,138,157,243,235,33,157,59,25,160,230,216,17,182,192,123,186,6,182,218,157,104,79],"mode":"xsalsa20_poly1305"}}')
+Voice websocket frame received: {'op': 4, 'd': {'mode': 'xsalsa20_poly1305', 'secret_key': [229, 190, 65, 101, 196, 70, 204, 240, 117, 58, 138, 157, 243, 235, 33, 157, 59, 25, 160, 230, 216, 17, 182, 192, 123, 186, 6, 182, 218, 157, 104, 79]}}
+received secret key for voice connection
+client >> Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"delay":0,"speaking":true}}')
+Voice speaking now set to True
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+playing URL https://www.youtube.com/watch?v=MGk-TdNpD5w
+Dispatching event command_completion
+Keeping voice websocket alive with timestamp 1473088834961
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088834961}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088834961}')
+Voice websocket frame received: {'op': 3, 'd': 1473088834961}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088840462
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088840462}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088840462}')
+Voice websocket frame received: {'op': 3, 'd': 1473088840462}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088845962
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088845962}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088845962}')
+Voice websocket frame received: {'op': 3, 'd': 1473088845962}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088851463
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088851463}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088851463}')
+Voice websocket frame received: {'op': 3, 'd': 1473088851463}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088856964
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088856964}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088856964}')
+Voice websocket frame received: {'op': 3, 'd': 1473088856964}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088862464
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088862464}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088862464}')
+Voice websocket frame received: {'op': 3, 'd': 1473088862464}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping websocket alive with sequence 8
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":8}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088867965
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088867965}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088867965}')
+Voice websocket frame received: {'op': 3, 'd': 1473088867965}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088873466
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088873466}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088873466}')
+Voice websocket frame received: {'op': 3, 'd': 1473088873466}
+Keeping voice websocket alive with timestamp 1473088878966
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088878966}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088878966}')
+Voice websocket frame received: {'op': 3, 'd': 1473088878966}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088884467
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088884467}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088884467}')
+Voice websocket frame received: {'op': 3, 'd': 1473088884467}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088889968
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088889968}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088889968}')
+Voice websocket frame received: {'op': 3, 'd': 1473088889968}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088895468
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088895468}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088895468}')
+Voice websocket frame received: {'op': 3, 'd': 1473088895468}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088900969
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088900969}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088900969}')
+Voice websocket frame received: {'op': 3, 'd': 1473088900969}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088906469
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088906469}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088906469}')
+Voice websocket frame received: {'op': 3, 'd': 1473088906469}
+Keeping websocket alive with sequence None
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":null}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+Keeping voice websocket alive with timestamp 1473088911970
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088911970}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088911970}')
+Voice websocket frame received: {'op': 3, 'd': 1473088911970}
+Keeping voice websocket alive with timestamp 1473088917471
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088917471}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088917471}')
+Voice websocket frame received: {'op': 3, 'd': 1473088917471}
+Keeping voice websocket alive with timestamp 1473088922971
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088922971}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088922971}')
+Voice websocket frame received: {'op': 3, 'd': 1473088922971}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088928472
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088928472}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088928472}')
+Voice websocket frame received: {'op': 3, 'd': 1473088928472}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088933973
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088933973}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088933973}')
+Voice websocket frame received: {'op': 3, 'd': 1473088933973}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088939473
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088939473}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088939473}')
+Voice websocket frame received: {'op': 3, 'd': 1473088939473}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088944974
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088944974}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088944974}')
+Voice websocket frame received: {'op': 3, 'd': 1473088944974}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping websocket alive with sequence None
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":null}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088950475
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088950475}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088950475}')
+Voice websocket frame received: {'op': 3, 'd': 1473088950475}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088955975
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088955975}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088955975}')
+Voice websocket frame received: {'op': 3, 'd': 1473088955975}
+Keeping voice websocket alive with timestamp 1473088961476
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088961476}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088961476}')
+Voice websocket frame received: {'op': 3, 'd': 1473088961476}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+Keeping voice websocket alive with timestamp 1473088966977
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088966977}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088966977}')
+Voice websocket frame received: {'op': 3, 'd': 1473088966977}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":true}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': True, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"op":5,"d":{"user_id":"202421118269784067","ssrc":10,"speaking":false}}')
+Voice websocket frame received: {'op': 5, 'd': {'ssrc': 10, 'speaking': False, 'user_id': '202421118269784067'}}
+client << Frame(fin=True, opcode=1, data=b'{"t":"VOICE_STATE_UPDATE","s":9,"op":0,"d":{"user_id":"202421118269784067","suppress":false,"session_id":"bfb90254d49af7ec592be9447e9f9b9a","self_mute":true,"self_deaf":false,"mute":false,"guild_id":"204493043154419721","deaf":false,"channel_id":"204498794811883525"}}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 0, 's': 9, 't': 'VOICE_STATE_UPDATE', 'd': {'guild_id': '204493043154419721', 'self_deaf': False, 'suppress': False, 'session_id': 'bfb90254d49af7ec592be9447e9f9b9a', 'user_id': '202421118269784067', 'deaf': False, 'self_mute': True, 'mute': False, 'channel_id': '204498794811883525'}}
+Dispatching event socket_response
+Dispatching event voice_state_update
+Keeping voice websocket alive with timestamp 1473088972477
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088972477}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088972477}')
+Voice websocket frame received: {'op': 3, 'd': 1473088972477}
+Keeping voice websocket alive with timestamp 1473088977978
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088977978}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088977978}')
+Voice websocket frame received: {'op': 3, 'd': 1473088977978}
+Keeping voice websocket alive with timestamp 1473088983479
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088983479}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088983479}')
+Voice websocket frame received: {'op': 3, 'd': 1473088983479}
+Keeping voice websocket alive with timestamp 1473088988979
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088988979}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088988979}')
+Voice websocket frame received: {'op': 3, 'd': 1473088988979}
+Keeping websocket alive with sequence 9
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":9}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+Keeping voice websocket alive with timestamp 1473088994480
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088994480}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088994480}')
+Voice websocket frame received: {'op': 3, 'd': 1473088994480}
+Keeping voice websocket alive with timestamp 1473088999981
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088999981}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473088999981}')
+Voice websocket frame received: {'op': 3, 'd': 1473088999981}
+Keeping voice websocket alive with timestamp 1473089005481
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089005481}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089005481}')
+Voice websocket frame received: {'op': 3, 'd': 1473089005481}
+Keeping voice websocket alive with timestamp 1473089010982
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089010982}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089010982}')
+Voice websocket frame received: {'op': 3, 'd': 1473089010982}
+Keeping voice websocket alive with timestamp 1473089016483
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089016483}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089016483}')
+Voice websocket frame received: {'op': 3, 'd': 1473089016483}
+Keeping voice websocket alive with timestamp 1473089021983
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089021983}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089021983}')
+Voice websocket frame received: {'op': 3, 'd': 1473089021983}
+Keeping voice websocket alive with timestamp 1473089027484
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089027484}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089027484}')
+Voice websocket frame received: {'op': 3, 'd': 1473089027484}
+Keeping websocket alive with sequence None
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":null}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+Keeping voice websocket alive with timestamp 1473089032985
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089032985}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089032985}')
+Voice websocket frame received: {'op': 3, 'd': 1473089032985}
+Keeping voice websocket alive with timestamp 1473089038485
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089038485}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089038485}')
+Voice websocket frame received: {'op': 3, 'd': 1473089038485}
+Keeping voice websocket alive with timestamp 1473089043986
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089043986}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089043986}')
+Voice websocket frame received: {'op': 3, 'd': 1473089043986}
+Keeping voice websocket alive with timestamp 1473089049487
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089049487}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089049487}')
+Voice websocket frame received: {'op': 3, 'd': 1473089049487}
+Keeping voice websocket alive with timestamp 1473089054988
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089054988}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089054988}')
+Voice websocket frame received: {'op': 3, 'd': 1473089054988}
+Keeping voice websocket alive with timestamp 1473089060488
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089060488}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089060488}')
+Voice websocket frame received: {'op': 3, 'd': 1473089060488}
+Keeping voice websocket alive with timestamp 1473089065989
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089065989}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089065989}')
+Voice websocket frame received: {'op': 3, 'd': 1473089065989}
+Keeping voice websocket alive with timestamp 1473089071490
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089071490}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089071490}')
+Voice websocket frame received: {'op': 3, 'd': 1473089071490}
+Keeping websocket alive with sequence None
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":null}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+Keeping voice websocket alive with timestamp 1473089076990
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089076990}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089076990}')
+Voice websocket frame received: {'op': 3, 'd': 1473089076990}
+Keeping voice websocket alive with timestamp 1473089082491
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089082491}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089082491}')
+Voice websocket frame received: {'op': 3, 'd': 1473089082491}
+Keeping voice websocket alive with timestamp 1473089087992
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089087992}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089087992}')
+Voice websocket frame received: {'op': 3, 'd': 1473089087992}
+Keeping voice websocket alive with timestamp 1473089093493
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089093493}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089093493}')
+Voice websocket frame received: {'op': 3, 'd': 1473089093493}
+Keeping voice websocket alive with timestamp 1473089098993
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089098993}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089098993}')
+Voice websocket frame received: {'op': 3, 'd': 1473089098993}
+Keeping voice websocket alive with timestamp 1473089104494
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089104494}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089104494}')
+Voice websocket frame received: {'op': 3, 'd': 1473089104494}
+Keeping voice websocket alive with timestamp 1473089109995
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089109995}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089109995}')
+Voice websocket frame received: {'op': 3, 'd': 1473089109995}
+Keeping websocket alive with sequence None
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":null}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+Keeping voice websocket alive with timestamp 1473089115495
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089115495}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089115495}')
+Voice websocket frame received: {'op': 3, 'd': 1473089115495}
+Keeping voice websocket alive with timestamp 1473089120996
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089120996}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089120996}')
+Voice websocket frame received: {'op': 3, 'd': 1473089120996}
+Keeping voice websocket alive with timestamp 1473089126497
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089126497}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089126497}')
+Voice websocket frame received: {'op': 3, 'd': 1473089126497}
+Keeping voice websocket alive with timestamp 1473089131997
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089131997}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089131997}')
+Voice websocket frame received: {'op': 3, 'd': 1473089131997}
+Keeping voice websocket alive with timestamp 1473089137498
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089137498}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089137498}')
+Voice websocket frame received: {'op': 3, 'd': 1473089137498}
+Keeping voice websocket alive with timestamp 1473089142999
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089142999}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089142999}')
+Voice websocket frame received: {'op': 3, 'd': 1473089142999}
+Keeping voice websocket alive with timestamp 1473089148500
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089148500}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089148500}')
+Voice websocket frame received: {'op': 3, 'd': 1473089148500}
+Keeping voice websocket alive with timestamp 1473089154000
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089154000}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089154000}')
+Voice websocket frame received: {'op': 3, 'd': 1473089154000}
+Keeping websocket alive with sequence None
+client >> Frame(fin=True, opcode=1, data=b'{"op":1,"d":null}')
+client << Frame(fin=True, opcode=1, data=b'{"t":null,"s":null,"op":11,"d":null}')
+Dispatching event socket_raw_receive
+WebSocket Event: {'op': 11, 's': None, 't': None, 'd': None}
+Dispatching event socket_response
+Keeping voice websocket alive with timestamp 1473089159501
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089159501}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089159501}')
+Voice websocket frame received: {'op': 3, 'd': 1473089159501}
+Keeping voice websocket alive with timestamp 1473089165002
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089165002}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089165002}')
+Voice websocket frame received: {'op': 3, 'd': 1473089165002}
+Keeping voice websocket alive with timestamp 1473089170502
+client >> Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089170502}')
+client << Frame(fin=True, opcode=1, data=b'{"op":3,"d":1473089170502}')
+Voice websocket frame received: {'op': 3, 'd': 1473089170502}
