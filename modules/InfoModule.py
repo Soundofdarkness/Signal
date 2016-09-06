@@ -7,7 +7,7 @@ class InfoModule:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='TEST')
+    @commands.command()
     async def info(self):
         message = ['**Signal Stats**']
         message.append('-Name: ' + self.bot.user.name)
