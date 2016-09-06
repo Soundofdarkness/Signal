@@ -11,7 +11,8 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
-bot = commands.Bot(command_prefix='?', description='Signal Bot by Eleria', pm_help=None)
+prefix = '?'
+bot = commands.Bot(command_prefix=prefix, description='Signal Bot by Eleria', pm_help=None)
 
 
 @bot.event
@@ -35,21 +36,13 @@ async def on_ready():
     print('---------------')
 
 
-@bot.event
-async def on_command(ctx):
-    message = ctx.message
-    destination = None
-    if message.channel.is_private:
-        destination = 'Private Message'
-    else:
-        destination = '#{0.channel.name} ({0.server.name})'.format(message)
-
-    logger.info('{0.timestamp}: {0.author.name} in {1}: {0.content}'.format(message, destination))
 
 
 @bot.event
 async def on_message(message):
-    bot.process_commands(message)
+    if message.author.bot:
+        return
+    await bot.process_commands(message)
 
 for module in modules:
     try:

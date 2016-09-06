@@ -7,12 +7,12 @@ class InfoModule:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(name='TEST')
     async def info(self):
         message = ['**Signal Stats**']
         message.append('-Name: ' + self.bot.user.name)
         message.append('-ID: ' + self.bot.user.id)
-        message.append('-Servers: ' + self.bot.servers)
+        message.append('- Servers: {}'.format(len(self.bot.servers)))
         channel_types = Counter(c.type for c in self.bot.get_all_channels())
         voice = channel_types[discord.ChannelType.voice]
         text = channel_types[discord.ChannelType.text]
