@@ -8,7 +8,7 @@ from config import Modules as modules
 logger = logging.getLogger('discord')
 handler = logging.FileHandler(filename='signal.log', encoding='utf-8', mode='w')
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 logger.addHandler(handler)
 
 prefix = '?'
@@ -34,8 +34,6 @@ async def on_ready():
     print('Discord Version')
     print(discord.__version__)
     print('---------------')
-
-
 
 
 @bot.event
