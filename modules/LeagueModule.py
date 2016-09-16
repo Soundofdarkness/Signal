@@ -55,13 +55,13 @@ class LeagueModule:
                            '*Champion*: {0}\n'
                            'Mastery Points: {1}'.format(champname, points))
 
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, help='Spectates a given User.Atm NA only')
     async def spectate(self, ctx, *, summoner: str):
         summoner_id = modules.utils.league.summoner_to_id('na', summoner)
-        obs_url = 'https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/na1/'+ summoner_id +'?api_key=' + key
+        obs_url = 'https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/'+ summoner_id +'?api_key=' + key
         obs = requests.get(obs_url).json()
         enc_key = obs['observers']['encryptionKey']
-        cmd = '``` "C:\Riot Games\League of Legends\RADS\solutions\lol_game_client_sln\releases\0.0.1.145\deploy\League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator" spectator.na.lol.riotgames.com:80 ' + enc_key + '```'
+        cmd = '```"C:\Riot Games\League of Legends\RADS\solutions\lol_game_client_sln\releases\0.0.1.145\deploy\League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator" "spectator.na.lol.riotgames.com:80 ' + enc_key + '"```'
         await self.bot.say(cmd)
 
 def setup(bot):
