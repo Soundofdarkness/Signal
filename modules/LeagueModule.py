@@ -61,7 +61,11 @@ class LeagueModule:
         obs_url = 'https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/'+ summoner_id +'?api_key=' + key
         obs = requests.get(obs_url).json()
         enc_key = obs['observers']['encryptionKey']
-        cmd = '```"C:\Riot Games\League of Legends\RADS\solutions\lol_game_client_sln\releases\0.0.1.145\deploy\League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator" "spectator.na.lol.riotgames.com:80 ' + enc_key + '"```'
+        mathchid = obs['gameId']
+
+        cmd = """ ```cd "C:\\Riot Games\\League of Legends\\RADS\\solutions\\lol_game_client_sln\\releases\\0.0.1.145\\deploy" \n
+        start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator spectator.na.lol.riotgames.com:80 {0} {1} NA1" "-UseRads" ```""".format(enc_key, mathchid)
+        await self.bot.say("Please paste the following into your cmd")
         await self.bot.say(cmd)
 
 def setup(bot):
