@@ -14,7 +14,7 @@ class AdministrationModule:
         await self.bot.change_status(game=discord.Game(name=gameName))
         await self.bot.say('Game changed to **{0}** :smile:'.format(gameName))
 
-    @commands.command(pass_context=True, help='Joins a server')
+    @commands.command(pass_context=True, help='Joins a server(normal UserAccount only')
     @modules.utils.utils.is_owner()
     async def add(self, ctx, *, invite:str):
         try:

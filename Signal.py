@@ -34,7 +34,7 @@ async def on_ready():
     print('Discord Version')
     print(discord.__version__)
     print('---------------')
-
+    await bot.change_status(game=discord.Game(name='?help'))
 
 @bot.event
 async def on_message(message):

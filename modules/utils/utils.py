@@ -8,3 +8,5 @@ def is_owner_check(message):
 
 def is_owner():
     return commands.check(lambda ctx: is_owner_check(ctx.message))
+
+
