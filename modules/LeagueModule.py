@@ -88,19 +88,19 @@ class LeagueModule:
                 await self.bot.say('Summoner is not ingame :thunder_cloud_rain:')
             else:
                 await self.bot.say('Unknown Error has occured :anger:')
+        else:
+            cmd = """ ```cd "C:\\Riot Games\\League of Legends\\RADS\\solutions\\lol_game_client_sln\\releases\\0.0.1.145\\deploy" \n
+start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator spectator.na.lol.riotgames.com:80 {0} {1} NA1" "-UseRads" ```""".format(enc_key, mathchid)
+            await self.bot.say("Please paste the following into your cmd or use the .bat provided")
+            await self.bot.say(cmd)
+            cmdfile = cmd.replace("`", "")
+            file = open(cwd + '\\cache\\{0}_spectate.bat'.format(mathchid), 'w')
+            file.write(cmdfile)
+            file.close()
+            f1 = open(cwd + '\\cache\\{0}_spectate.bat'.format(mathchid), 'r')
 
-        cmd = """ ```cd "C:\\Riot Games\\League of Legends\\RADS\\solutions\\lol_game_client_sln\\releases\\0.0.1.145\\deploy" \n
-        start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator spectator.na.lol.riotgames.com:80 {0} {1} NA1" "-UseRads" ```""".format(enc_key, mathchid)
-        await self.bot.say("Please paste the following into your cmd or use the .bat provided")
-        await self.bot.say(cmd)
-        cmdfile = cmd.replace("`", "")
-        file = open(cwd + '\\cache\\{0}_spectate.bat'.format(mathchid), 'w')
-        file.write(cmdfile)
-        file.close()
-        f1 = open(cwd + '\\cache\\{0}_spectate.bat'.format(mathchid), 'r')
-
-        await self.bot.send_file(ctx.message.channel, f1)
-        f1.close()
+            await self.bot.send_file(ctx.message.channel, f1)
+            f1.close()
 
     @commands.command(pass_context=True, help='Shows the status for the given platform')
     async def lolstatus(self, ctx, platform:str):
