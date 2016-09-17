@@ -39,7 +39,8 @@ class MusicModule:
             await self.bot.send_message(ctx.message.channel, fmt.format(type(e).__name__, e))
         else:
             player.volume = 0.6
-            await self.bot.say('Playing {0}'.format(player.title))
+            message = 'Playing {0}'.format((player.title))
+            await self.bot.say(message)
             player.start()
 
     @commands.command(pass_context=True, no_pm=True)
@@ -73,10 +74,11 @@ class MusicModule:
             player.stop()
 
         try:
-            voice.audio_player.cancel()
-            await voice.disconnect()
-        except:
-            pass
+            await self.voice.disconnect()
+            self.voice = None
+        except Exception as e:
+            fmt = 'An error occurred while processing this request: ```py\n{}: {}\n```'
+            await self.bot.send_message(ctx.message.channel, fmt.format(type(e).__name__, e))
 
 
 def setup(bot):
