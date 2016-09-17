@@ -79,8 +79,15 @@ class LeagueModule:
         cwd = os.getcwd()
         obs_url = 'https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/'+ summoner_id +'?api_key=' + key
         obs = requests.get(obs_url).json()
-        enc_key = obs['observers']['encryptionKey']
-        mathchid = obs['gameId']
+        try:
+            enc_key = obs['observers']['encryptionKey']
+            mathchid = obs['gameId']
+        except:
+            code = obs['status']['status_code']
+            if code == 404:
+                await self.bot.say('Summoner is not ingame :thunder_cloud_rain:')
+            else:
+                await self.bot.say('Unknown Error has occured :anger:')
 
         cmd = """ ```cd "C:\\Riot Games\\League of Legends\\RADS\\solutions\\lol_game_client_sln\\releases\\0.0.1.145\\deploy" \n
         start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator spectator.na.lol.riotgames.com:80 {0} {1} NA1" "-UseRads" ```""".format(enc_key, mathchid)
