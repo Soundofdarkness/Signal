@@ -18,9 +18,26 @@ class LeagueModule:
         summonernamerequest = summonernamerequest.lower()
         url = 'https://' + platform + '.api.pvp.net/api/lol/' + platform + '/v1.4/summoner/by-name/' + summoner + '?api_key=' + key
         rsumonner = requests.get(url).json()
-        summoner_id = str(rsumonner[summonernamerequest]['id'])
-        pfp_id = str(rsumonner[summonernamerequest]['profileIconId'])
-        level = str(rsumonner[summonernamerequest]['summonerLevel'])
+        try:
+            summoner_id = str(rsumonner[summonernamerequest]['id'])
+            pfp_id = str(rsumonner[summonernamerequest]['profileIconId'])
+            level = str(rsumonner[summonernamerequest]['summonerLevel'])
+        except:
+            exception = rsumonner['status']['status_code']
+            info = rsumonner['status']['message']
+            if exception == 404:
+                await self.bot.say('Summoner not found')
+                await self.bot.say('`{0}`'.format(info))
+                return True
+            elif exception == 429:
+                await self.bot.say('Rate limit is exceeded :thunder_cloud_rain:')
+                return True
+            elif exception == 500:
+                await self.bot.say('Unknown Error! Everybody panic !')
+                return True
+            elif exception == 503:
+                await self.bot.say('Service Unavailable. Please check again later.')
+                return True
         tier_url = 'https://' + platform + '.api.pvp.net/api/lol/' + platform + '/v2.5/league/by-summoner/' + summoner_id + '/entry?api_key=' + key
         try:
             league = requests.get(tier_url).json()
@@ -67,6 +84,30 @@ class LeagueModule:
         start "" "League of Legends.exe" "8394" "LoLLauncher.exe" "" "spectator spectator.na.lol.riotgames.com:80 {0} {1} NA1" "-UseRads" ```""".format(enc_key, mathchid)
         await self.bot.say("Please paste the following into your cmd")
         await self.bot.say(cmd)
+
+    @commands.command(pass_context=True, help='Shows the status for the given platform')
+    async def lolstatus(self, ctx, platform:str):
+        url = 'http://status.leagueoflegends.com/shards/' + platform
+        status_parse = requests.get(url).json()
+        try:
+            name = status_parse['name']
+            Game_status = status_parse['services'][0]['status']
+            Shop_status = status_parse['services'][1]['status']
+            website_status = status_parse['services'][2]['status']
+            client_status = status_parse['services'][3]['status']
+            alpha = status_parse['services'][4]['status']
+            hostname = status_parse['hostname']
+        except:
+            alpha = 'Shut down'
+        await self.bot.say('League Status for {0} \n'
+                          '-----------------------\n'
+                          'Host: {1} \n'
+                          'Game Status: {2}\n'
+                          'Shop Status: {3}\n'
+                          'Website Status: {4}\n'
+                          'Client Status {5}\n'
+                          'Alpha Status: {6}'.format(name, hostname, Game_status, Shop_status, website_status, client_status,alpha))
+
 
 def setup(bot):
     bot.add_cog(LeagueModule(bot))
