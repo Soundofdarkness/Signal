@@ -48,3 +48,22 @@ def faction_to_name(faction:str):
     elif "CORPUS" in faction:
         name = "Corpus"
     return name
+
+
+def mission_to_name(string: str):
+    name = string.split("_")
+    name = name[-1]
+    return name
+
+
+def difficulty_parse(dif: str):
+    num1 = dif[3]
+    num2 = dif[4]
+    num = str(num1) + str(num2) + "%"
+
+
+def node_to_name(node: str):
+    file = open('cache\\warframe\\solNodes.json')
+    data = json.load(file)
+    name = data['nodes'][node]['value']
+    return name

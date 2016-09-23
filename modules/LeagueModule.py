@@ -71,7 +71,7 @@ class LeagueModule:
         await self.bot.say('**Championmastery**\n'
                            '--------------------\n'
                            '*Champion*: {0}\n'
-                           'Mastery Points: {1}'.format(champname, points))
+                           '*Mastery Points*: {1}'.format(champname, points))
 
     @commands.command(pass_context=True, help='Spectates a given User.Atm NA only')
     async def spectate(self, ctx, *, summoner: str):
